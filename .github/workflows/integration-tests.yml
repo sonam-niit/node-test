@@ -47,9 +47,6 @@ jobs:
             sleep 2
           done
 
-      - name: Run database migrations (if needed)
-        run: npm run migrate  # or whatever command sets up schema
-
       - name: Run integration tests
         env:
           DATABASE_URL: ${{ env.DATABASE_URL }}
